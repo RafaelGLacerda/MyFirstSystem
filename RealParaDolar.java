@@ -19,7 +19,7 @@ public static void main(String[] args) {
 	
 	double resultado = real/dolar;
 	
-	System.out.println("Resultado: R$" + resultado);
+	System.out.println("Resultado em dolares: $" + resultado);
 	
 	
 	
