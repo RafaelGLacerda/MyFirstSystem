@@ -11,7 +11,7 @@ public static void main(String[]args) {
 	
 	
 	Scanner sc = new Scanner(System.in);
-	System.out.println("Digite aqui o valor do Real Atualmente: ");
+	System.out.println("Digite aqui quanto vale 1 Dolar em Reais Atualmente: ");
 	real = sc.nextDouble();
 	
 	Scanner sc1 = new Scanner(System.in);
