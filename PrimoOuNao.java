@@ -12,7 +12,8 @@ public static void  main(String[]args) {
 	int numero = sc.nextInt();
 	
 	 boolean ehPrimo = true;
-     for (int i = 2; i <= numero / 2; i++) {
+	// NUMERO PRIMO SO PODE SER DIVIDIDO POR 1 E POR ELE MESMO
+     for (int i = 2; i <= numero / 2; i++) {	     
          if (numero % i == 0) {
              ehPrimo = false;
              break;
