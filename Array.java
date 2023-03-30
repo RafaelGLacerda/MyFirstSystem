@@ -21,6 +21,7 @@ public class array {
 	        int somaImpar = 0;
 
 	        for (int numero : numeros) {
+			// SE O NUMERO FOR DIVISOR DE 2 = 0 ENTÃO ELE É PAR  
 	            if (numero % 2 == 0) {
 	                somaPar += numero;
 	            } else {
