@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pessoaChatGpt {
+public class pessoa {
     private String nome;
     private int idade;
     private char sexo;
