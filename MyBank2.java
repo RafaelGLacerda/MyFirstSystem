@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ContaBancaria1{
 
-private static int numero;
+private static long numero;
 private static double saldo;
 private static String titular;
 private static double depositar;
@@ -16,19 +16,19 @@ titular = sc.nextLine();
 }
 public void numero(){
 System.out.print("Digite o numero do titular: ");
- numero = sc.nextInt();
+numero = sc.nextInt();
 }
 public void saldo(){
-System.out.print("Digite o valor do seu saldo: ");
+System.out.print("Digite o valor do seu saldo: R$ ");
 saldo = sc.nextDouble();
 }
 public void depositar(){
-System.out.print("Digite o valor que deseja depositar: ");
+System.out.print("Digite o valor que deseja depositar: R$ ");
 depositar = sc.nextDouble();
 
 }
 public void sacar(){
-System.out.print("Digite o valor que deseja sacar: ");
+System.out.print("Digite o valor que deseja sacar: R$ ");
 sacar = sc.nextDouble();
 
 }
@@ -40,9 +40,7 @@ public void exibir(){
     System.out.println("Dados Após Atualização: ");
     System.out.println("Titular: " +titular);
     System.out.println("Numero: " +numero);
-    System.out.println("Saldo: " +saldo);
+    System.out.println("Saldo: R$ " +saldo);
 }
-
-
 
 }
