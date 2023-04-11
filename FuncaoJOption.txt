@@ -1,4 +1,5 @@
 JOptionpane. (todos os abaixo)
+todo JOptionpane. necessita de (import javax.swing.JOptionPane;)
 
 showMessageDialog - Exibe uma caixa de diálogo de mensagem simples com um botão "Ok".
 
