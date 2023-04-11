@@ -1,0 +1,36 @@
+showMessageDialog - Exibe uma caixa de diálogo de mensagem simples com um botão "Ok".
+
+showConfirmDialog - Exibe uma caixa de diálogo de confirmação com botões "Ok" e "Cancelar".
+
+showInputDialog - Exibe uma caixa de diálogo para entrada de texto, permitindo que o usuário insira um valor e clique em "Ok" ou "Cancelar".
+
+showOptionDialog - Exibe uma caixa de diálogo com uma lista de opções para o usuário escolher.
+
+showInternalMessageDialog - Exibe uma caixa de diálogo de mensagem simples em um JInternalFrame.
+
+showInternalConfirmDialog - Exibe uma caixa de diálogo de confirmação em um JInternalFrame.
+
+showInternalInputDialog - Exibe uma caixa de diálogo para entrada de texto em um JInternalFrame.
+
+showInternalOptionDialog - Exibe uma caixa de diálogo com uma lista de opções em um JInternalFrame.
+
+showMessageDialog(Component parentComponent, Object message, String title, int messageType, Icon icon) 
+- Exibe uma caixa de diálogo de mensagem personalizada com um ícone.
+
+
+
+showConfirmDialog(Component parentComponent, Object message, String title, 
+int optionType, int messageType, Icon icon) 
+- Exibe uma caixa de diálogo de confirmação personalizada com um ícone.
+
+
+
+showInputDialog(Component parentComponent, Object message, String title, int messageType, Icon icon, 
+Object[] selectionValues, Object initialSelectionValue) 
+- Exibe uma caixa de diálogo para entrada de texto personalizada com um ícone e opções predefinidas.
+
+
+
+showOptionDialog(Component parentComponent, Object message, String title, int optionType, int messageType, Icon icon,
+Object[] options, Object initialValue) 
+- Exibe uma caixa de diálogo de opções personalizada com um ícone e opções predefinidas.
