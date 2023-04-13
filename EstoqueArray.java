@@ -14,8 +14,8 @@ public class estoque{
     
   }
   
-double maxPreco = -1; // inicializa o valor máximo como o menor possível
-int indexMaxPreco = -1; // inicializa o índice do valor máximo como inválido
+double maxPreco = -1; 
+int indexMaxPreco = -1; 
 
 for (int i = 0; i < preço.length; i++) {
     if (preço[i] > maxPreco) {
@@ -23,8 +23,21 @@ for (int i = 0; i < preço.length; i++) {
         indexMaxPreco = i;
     }
 }
+
+double minPreco = Double.MAX_VALUE; 
+int indexMinPreco = -1; 
+
+for (int i = 0; i < preço.length; i++) {
+    if (preço[i] < minPreco) {
+        minPreco = preço[i];
+        indexMinPreco = i;
+    }
+}
+
 System.out.println();
-// exibe o nome do produto e o preço correspondente
+System.out.println("Produto mais barato: " + Produtos[indexMinPreco] + " - Preço: " + minPreco);
+
+System.out.println();
 System.out.println("Produto mais caro: " + Produtos[indexMaxPreco] + " - Preço: R$ " + maxPreco);
 
     }
