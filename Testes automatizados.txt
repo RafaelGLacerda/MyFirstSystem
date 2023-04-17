@@ -1,0 +1,22 @@
+Testes automatizados são uma técnica de desenvolvimento de software que visa verificar
+o comportamento esperado de uma aplicação através de testes automatizados, 
+que são executados automaticamente por um software de teste. Esses testes podem ser executados de forma isolada ou em conjunto,
+para verificar se a aplicação está funcionando conforme o esperado.
+
+
+Existem vários tipos de testes automatizados, como testes unitários, testes de integração, testes de aceitação, entre outros.
+Os testes unitários, por exemplo, são realizados em um nível mais granular, testando cada unidade do código de forma isolada.
+Já os testes de integração verificam se as diferentes partes do sistema estão funcionando bem juntas. Os testes de aceitação,
+por sua vez, são executados para validar se a aplicação está funcionando conforme as expectativas do usuário.
+
+
+Os testes automatizados são importantes porque permitem detectar erros de forma antecipada, antes mesmo 
+de a aplicação ser entregue ao usuário final. Isso pode reduzir os custos de manutenção e garantir a qualidade do software. 
+Além disso, os testes automatizados podem ser facilmente executados várias vezes, permitindo identificar problemas de desempenho, 
+segurança e estabilidade do software.
+
+
+Para realizar testes automatizados, é comum utilizar frameworks de testes, como o JUnit para testes unitários em Java.
+Esses frameworks permitem definir testes de forma programática e executá-los automaticamente.
+Além disso, existem outras ferramentas de testes automatizados que ajudam a automatizar a geração de dados de teste,
+a execução de testes em paralelo, entre outras funcionalidades.
