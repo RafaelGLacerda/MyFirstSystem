@@ -1,0 +1,20 @@
+Em Java, as anotações são uma forma de associar metadados a um elemento de código, como uma classe, método ou variável. 
+Elas fornecem informações adicionais sobre como o elemento deve ser processado pelo compilador ou em tempo de execução.
+
+
+As anotações são identificadas por um @ seguido pelo nome da anotação e podem ter argumentos opcionais 
+que fornecem informações adicionais. Por exemplo, a anotação @Override é usada para indicar que um método 
+está substituindo um método da classe pai, e não é necessário que ela tenha argumentos.
+
+
+As anotações podem ser definidas pelo usuário ou fazem parte do conjunto de anotações padrão fornecidas pela plataforma Java. 
+Algumas anotações comuns incluem:
+
+- @Deprecated: indica que o elemento de código está obsoleto e não deve ser usado.
+
+- @SuppressWarnings: desativa avisos do compilador para o elemento de código em que é aplicado.
+
+- @NotNull e @Nullable: indica se um parâmetro, retorno ou campo pode ou não ser nulo.
+
+- @FunctionalInterface: indica que uma interface é uma interface funcional, que pode ser usada
+  com expressões lambda e métodos de referência.
