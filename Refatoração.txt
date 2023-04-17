@@ -1,0 +1,22 @@
+Refatoração em programação é o processo de modificar o código existente para melhorar sua estrutura, 
+legibilidade, manutenibilidade e/ou desempenho, sem alterar o comportamento externo do programa.
+
+
+O objetivo da refatoração é tornar o código mais fácil de entender e modificar,
+permitindo que ele evolua ao longo do tempo. Isso é especialmente importante em projetos de software em que 
+o código é frequentemente modificado e mantido por várias pessoas ao longo do tempo.
+
+Algumas das técnicas de refatoração incluem:
+
+- Extração de método: criação de um novo método a partir de um trecho de código existente, 
+para tornar o código mais legível e reutilizável.
+
+- Renomeação: alteração do nome de uma variável, método ou classe para torná-lo mais descritivo e/ou significativo.
+
+- Substituição de condicional por polimorfismo: substituição de um bloco de código condicional 
+por uma hierarquia de classes ou interfaces para simplificar o código e torná-lo mais flexível.
+
+- Remoção de código duplicado: eliminação de código duplicado em várias partes do programa para 
+torná-lo mais enxuto e mais fácil de manter.
+
+- Introdução de design patterns: utilização de padrões de projeto para melhorar a estrutura e a legibilidade do código.
