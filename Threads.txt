@@ -1,0 +1,19 @@
+Threads em Java são unidades de execução concorrentes dentro de um único programa. 
+Elas são usadas para executar tarefas em paralelo, permitindo que o programa realize 
+várias atividades simultaneamente e melhore o desempenho.
+
+
+Uma thread é criada através da classe Thread, 
+que pode ser estendida ou implementada em outras classes. 
+Uma vez criada, a thread pode ser iniciada chamando o método start(),
+que inicia a execução da thread em paralelo com a thread principal do programa (chamada de thread "main").
+
+
+A execução de uma thread é controlada pelo método run(), 
+que deve ser implementado pela classe que estende ou implementa a classe Thread. 
+Esse método contém as instruções que serão executadas pela thread em paralelo com as outras threads do programa.
+
+
+Além disso, a classe Thread fornece vários métodos para gerenciamento e controle de threads, 
+como sleep(), que faz a thread atual dormir por um determinado período de tempo, join(), 
+que espera pela conclusão de outra thread antes de continuar a execução, e interrupt(), que interrompe a execução da thread.
