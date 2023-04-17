@@ -17,8 +17,8 @@ public class ThreadsExemplo extends Thread {
     }
 
     public static void main(String[] args) {
-        ThreadsExemplo thread1 = new ThreadsExemplo("Thread 1");
-        ThreadsExemplo thread2 = new ThreadsExemplo("Thread 2");
+        ThreadsExemplo thread1 = new ThreadsExemplo("Função execultada 1");
+        ThreadsExemplo thread2 = new ThreadsExemplo("Função execultada 2");
         thread1.start();
         thread2.start();
     }
