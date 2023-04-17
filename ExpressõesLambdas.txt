@@ -1,0 +1,18 @@
+INTERFACE FUNCIONAL: uma expressão lambda é usada para implementar uma interface funcional, 
+que é uma interface que contém exatamente um método abstrato. Isso significa que, 
+em vez de definir uma classe separada que implemente a interface, 
+podemos usar uma expressão lambda para implementar o método abstrato de forma concisa e em tempo de execução.
+
+
+SINTAXE CONCISA: a sintaxe de uma expressão lambda é muito mais concisa do que a de uma classe anônima ou 
+de uma classe definida separadamente. Isso torna mais fácil e rápido escrever e ler código que usa expressões lambda.
+
+
+CAPTURA DE VARIAVEIS: uma expressão lambda pode capturar variáveis definidas fora de seu escopo, 
+chamadas variáveis de captura. Isso significa que a expressão lambda pode acessar e modificar essas variáveis. 
+Isso é útil em situações onde queremos modificar variáveis definidas em um escopo externo à expressão lambda.
+
+
+PROGRAMAÇÃO FUNCIONAL: as expressões lambda são uma parte fundamental da programação funcional em Java. 
+Isso significa que podemos usar expressões lambda para passar funções como argumentos para outros métodos, 
+armazenar funções em variáveis ​​e até mesmo retornar funções de outros métodos.
