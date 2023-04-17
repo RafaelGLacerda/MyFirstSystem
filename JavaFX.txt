@@ -1,0 +1,41 @@
+JavaFX é uma plataforma gráfica de desktop desenvolvida pela Oracle e que permite a criação de interfaces
+gráficas de usuário (GUIs) em Java. É uma tecnologia voltada para a criação de aplicativos de desktop ricos em recursos, 
+como jogos, aplicativos de mídia, sistemas de gerenciamento de dados e outros aplicativos interativos.
+
+
+JavaFX é baseado em uma arquitetura de componentes que permite a construção de interfaces de usuário
+sofisticadas com recursos avançados de animação, efeitos visuais, gráficos em 2D e 3D e manipulação de eventos. 
+Ele fornece uma variedade de componentes de interface do usuário, como botões, caixas de texto, menus, tabelas e muitos outros,
+além de recursos como CSS e FXML para a estilização da interface.
+
+
+JavaFX foi introduzido na versão 2.0 do JDK e substituiu a antiga plataforma gráfica AWT 
+(Abstract Window Toolkit) e o Swing. Desde o lançamento, JavaFX tem sido atualizado regularmente e aprimorado com novos recursos, 
+tornando-se uma plataforma robusta e flexível para o desenvolvimento de aplicativos de desktop.
+
+
+Algumas das principais vantagens do uso do JavaFX incluem sua compatibilidade com múltiplas plataformas 
+(Windows, Linux, Mac OS X, etc.), sua integração com outras tecnologias Java e sua facilidade de uso para 
+desenvolvedores Java que já estão familiarizados com a linguagem.
+
+
+No entanto, é importante notar que, desde o lançamento do JDK 11, a Oracle não mais inclui o JavaFX como parte integrante do JDK. 
+Ele deve ser baixado e instalado separadamente.
+
+Aqui estão alguns exemplos de projetos desenvolvidos em JavaFX:
+
+- Scene Builder: Uma ferramenta de layout visual para a criação de interfaces de usuário JavaFX.
+
+- JFXtras: Uma coleção de controles e utilitários JavaFX adicionais para facilitar o desenvolvimento de aplicativos JavaFX.
+
+- Almas-Browser: Um navegador de código aberto baseado em JavaFX.
+
+- GanttFX: Uma ferramenta de gráfico de Gantt de código aberto para JavaFX.
+
+- DukePad: Um tablet de mesa baseado em JavaFX, que permite navegar na web, assistir a vídeos e executar aplicativos.
+
+- JMetro: Um conjunto de estilos de interface do usuário com uma aparência moderna para aplicativos JavaFX.
+
+- FXExperienceControls: Uma coleção de controles de interface do usuário de código aberto para JavaFX.
+
+- Gluon Mobile: Uma plataforma de desenvolvimento de aplicativos móveis para iOS e Android baseada em JavaFX.
