@@ -1,0 +1,46 @@
+Em Java, uma Stream é uma sequência de elementos que pode ser processada em uma sequência de operações. 
+As Streams são uma parte importante da programação funcional em Java, pois permitem manipular coleções 
+de elementos de forma concisa e eficiente.
+
+
+Existem duas principais categorias de operações que podemos realizar em uma Stream: 
+operações intermediárias e operações terminais. As operações intermediárias são aquelas que retornam uma nova Stream, 
+enquanto as operações terminais retornam um resultado final, como um valor único ou uma coleção.
+
+
+Algumas das operações intermediárias que podemos realizar em uma Stream incluem:
+
+- filter(Predicate<T> predicate): filtra a Stream com base em um predicado.
+
+- map(Function<T, R> mapper): mapeia cada elemento da Stream para um novo elemento com base em uma função.
+
+- flatMap(Function<T, Stream<R>> mapper): mapeia cada elemento da Stream para uma Stream e, em seguida, achatá-la em uma única Stream.
+
+- distinct(): retorna uma Stream com elementos distintos.
+
+- sorted(): ordena a Stream de acordo com a ordem natural dos elementos.
+
+- limit(long maxSize): retorna uma Stream com um máximo de maxSize elementos.
+
+- skip(long n): retorna uma Stream sem os primeiros n elementos.
+
+
+Algumas das operações terminais que podemos realizar em uma Stream incluem:
+
+- forEach(Consumer<T> action): executa uma ação para cada elemento da Stream.
+
+- reduce(BinaryOperator<T> accumulator): combina todos os elementos da Stream em um único elemento usando um acumulador.
+
+- collect(Collector<T, A, R> collector): coleta os elementos da Stream em uma coleção especificada pelo Collector.
+
+- count(): retorna o número de elementos na Stream.
+
+- anyMatch(Predicate<T> predicate): retorna true se algum dos elementos da Stream corresponder ao predicado.
+
+- allMatch(Predicate<T> predicate): retorna true se todos os elementos da Stream corresponderem ao predicado.
+
+- noneMatch(Predicate<T> predicate): retorna true se nenhum dos elementos da Stream corresponder ao predicado.
+
+- O uso de Streams em Java pode tornar o código mais legível e conciso, especialmente em situações em que precisamos 
+manipular coleções de elementos. As Streams nos permitem realizar uma série de operações em uma única linha de código, 
+em vez de escrever vários loops e condicionais.
