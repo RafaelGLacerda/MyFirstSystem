@@ -6,6 +6,7 @@ public class MatrizMaiorNumero {
     int[][] Jhonsons = new int[3][3];
     int max = Integer.MIN_VALUE;
     int min = Integer.MAX_VALUE;
+    // sim, no max coloca o MIN, no min coloca o MAX.
 
     Scanner sc = new Scanner(System.in);
 
