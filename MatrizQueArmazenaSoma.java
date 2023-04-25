@@ -8,8 +8,7 @@ public class MatrizInsana {
         int[][] soma = new int[2][2];
 
         Scanner sc = new Scanner(System.in);
-        double media = 0;
-
+       
         System.out.println("Digite a primeira matriz 2x2: ");
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 2; j++) {
