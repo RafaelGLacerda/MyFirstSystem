@@ -28,11 +28,17 @@ for(int i = 1; i < numeros.length; i++){
        
     }
 }
+int soma = 0;
+int media = 0;
+for(int i = 0; i < numeros.length; i++){
+    soma += numeros[i];
+}
 
+media = soma / quantidade;
 
 System.out.println("menor numero = " + menor);
 System.out.println("Maior numero = " + maior);
-
+System.out.println("Media dos numeros = " + media);
 
     }
 }
