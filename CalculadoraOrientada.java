@@ -24,7 +24,7 @@ class subtrair extends operações {
     private double n1;
     private double n2;
 
-    public double subtrair(double n1, double n2) {
+    public subtrair(double n1, double n2) {
         this.n1 = n1;
         this.n2 = n2;
     }
@@ -38,7 +38,7 @@ class multiplicar extends operações {
     private double n1;
     private double n2;
 
-    public double multiplicar(double n1, double n2) {
+    public multiplicar(double n1, double n2) {
         this.n1 = n1;
         this.n2 = n2;
     }
@@ -52,7 +52,7 @@ class divisão extends operações {
     private double n1;
     private double n2;
 
-    public double divisão(double n1, double n2) {
+    public divisão(double n1, double n2) {
         this.n1 = n1;
         this.n2 = n2;
     }
