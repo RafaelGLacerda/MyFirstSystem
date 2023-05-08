@@ -7,7 +7,7 @@
 
     for(int i = 1; i < low.length; i++){
     if(low[i] != primeiro){
-    iguais = true;
+    iguais = false;
     break;
     }
     }
