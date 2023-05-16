@@ -195,3 +195,6 @@ public class Main {
         }
     }
 }
+// pedir pro chat gpt: mudar classe de Main para Programa, comentar o que cada coisa faz;
+// criar uma nova funcao de listar os produtos de forma ordenada;
+// creiar uma nova funcao para remover ou alterar produtos.
