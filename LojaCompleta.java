@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 class Produto implements Comparable<Produto> {
+    // Atributos do produto
     private String nomeProduto;
     private String cor;
     private String preco;
@@ -15,6 +16,7 @@ class Produto implements Comparable<Produto> {
     private String tipoGola;
     private String tipoManga;
 
+     // Construtor da classe Produto
     public Produto(String nomeProduto, String cor, String preco, String tamanho, String material, String tipoProduto, String tipoZiper, String tipoCintura, String tipoGola, String tipoManga) {
         this.nomeProduto = nomeProduto;
         this.cor = cor;
@@ -28,6 +30,8 @@ class Produto implements Comparable<Produto> {
         this.tipoManga = tipoManga;
     }
 
+
+    // Métodos getters e setters para acessar e modificar os atributos do produto
     public String getNomeProduto() {
         return nomeProduto;
     }
@@ -108,6 +112,7 @@ class Produto implements Comparable<Produto> {
         this.tipoManga = tipoManga;
     }
 
+    // Método mostra() para exibir as informações do produto
     public String mostra() {
         StringBuilder sb = new StringBuilder();
         sb.append("Nome do Produto: ").append(nomeProduto)
@@ -117,6 +122,7 @@ class Produto implements Comparable<Produto> {
                 .append(", Material: ").append(material)
                 .append(", Tipo de Produto: ").append(tipoProduto);
 
+        // Verifica o tipo de produto e adiciona as características específicas correspondentes
         if (tipoProduto.equalsIgnoreCase("Cima")) {
             sb.append(", Tipo de Gola: ").append(tipoGola)
                     .append(", Tipo de Manga: ").append(tipoManga);
@@ -129,7 +135,7 @@ class Produto implements Comparable<Produto> {
         return sb.toString();
     }
 
-    @Override
+    // Implementação do método compareTo() da interface Comparable para permitir a comparação entre produtos
     public int compareTo(Produto outroProduto) {
         return nomeProduto.compareTo(outroProduto.getNomeProduto());
     }
@@ -138,6 +144,7 @@ class Produto implements Comparable<Produto> {
 public class Programa {
     private List<Produto> produtos = new ArrayList<>();
 
+      // Método para adicionar um produto ao catálogo
     public void adicionarProduto() {
         Scanner lei = new Scanner(System.in);
         System.out.println("Digite o tipo de produto (Cima/Baixo):");
@@ -175,17 +182,20 @@ public class Programa {
             tipoCintura = lei.nextLine();
         }
 
+        // Cria um novo objeto Produto com os dados informados
         Produto produto = new Produto(nomeProduto, cor, preco, tamanho, material, tipoProduto, tipoZiper, tipoCintura, tipoGola, tipoManga);
         produtos.add(produto);
         System.out.println("Produto adicionado com sucesso!");
     }
 
+    // Método para listar todos os produtos do catálogo
     public void listarProdutos() {
         if (produtos.isEmpty()) {
             System.out.println("Nenhum produto cadastrado.");
             return;
         }
 
+        // Ordena a lista de produtos em ordem alfabética pelo nome
         Collections.sort(produtos);
 
         System.out.println("----- Produtos -----");
@@ -194,11 +204,13 @@ public class Programa {
         }
     }
 
+    // Método para remover um produto do catálogo
     public void removerProduto() {
         Scanner lei = new Scanner(System.in);
         System.out.println("Digite o nome do produto que deseja remover:");
         String nomeProduto = lei.nextLine();
 
+        // Verifica se existe um produto com o nome informado e o remove
         boolean removido = produtos.removeIf(produto -> produto.getNomeProduto().equalsIgnoreCase(nomeProduto));
 
         if (removido) {
@@ -208,6 +220,7 @@ public class Programa {
         }
     }
 
+    // Método para alterar os dados de um produto existente no catálogo
     public void alterarProduto() {
         Scanner lei = new Scanner(System.in);
         System.out.println("Digite o nome do produto que deseja alterar:");
@@ -252,6 +265,7 @@ public class Programa {
                     tipoCintura = lei.nextLine();
                 }
     
+                // Cria um novo objeto Produto com os dados informados
                 Produto novoProduto = new Produto(novoNomeProduto, cor, preco, tamanho, material, tipoProduto, tipoZiper, tipoCintura, tipoGola, tipoManga);
                 produtos.set(i, novoProduto);
     
@@ -265,7 +279,7 @@ public class Programa {
         }
     }
     
-
+    // Método para pesquisar um produto pelo nome
     public void pesquisarProduto() {
         Scanner lei = new Scanner(System.in);
         System.out.println("Digite o nome do produto que deseja pesquisar:");
@@ -294,7 +308,7 @@ public class Programa {
         Scanner lei = new Scanner(System.in);
     
         int opcao = 0;
-    
+        // Lista de opções
         do {
             System.out.println("===== Catálogo de Roupas =====");
             System.out.println("1 - Adicionar Produto");
@@ -306,8 +320,9 @@ public class Programa {
             System.out.println("Digite a opção desejada:");
     
             opcao = lei.nextInt();
-            lei.nextLine(); // Limpar o buffer
-    
+            lei.nextLine();
+            
+            // declaração de cada opção com um único número diferente
             switch (opcao) {
                 case 1:
                     catalogo.adicionarProduto();
@@ -333,6 +348,6 @@ public class Programa {
             }
     
             System.out.println();
-        } while (opcao != 6);
+        } while (opcao != 6); // encerramento
     }
-}   
+}
