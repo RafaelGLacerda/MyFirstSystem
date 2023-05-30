@@ -200,7 +200,7 @@ public class Programa {
         }
 
         // Cria um novo objeto Produto com os dados informados
-        Produto produto = new Produto(codigoProduto, nomeProduto, cor, preco, tamanho, material, tipoProduto, tipoZiper, tipoCintura, tipoGola, tipoManga);
+         Produto produto = new Produto(codigoProduto, nomeProduto, cor, preco, tamanho, material, tipoProduto, tipoZiper, tipoCintura, tipoGola, tipoManga);
         produtos.add(produto);
         System.out.println("Produto adicionado com sucesso!");
 }
@@ -222,20 +222,30 @@ public class Programa {
     }
 
     // Método para remover um produto do catálogo
-    public void removerProduto() {
-        Scanner lei = new Scanner(System.in);
-        System.out.println("Digite o nome do produto que deseja remover:");
-        String nomeProduto = lei.nextLine();
 
-        // Verifica se existe um produto com o nome informado e o remove
-        boolean removido = produtos.removeIf(produto -> produto.getNomeProduto().equalsIgnoreCase(nomeProduto));
+public void removerProduto() {
+    Scanner lei = new Scanner(System.in);
+    System.out.println("Digite o código do produto que deseja remover:");
+    int codigoProduto = lei.nextInt();
+    lei.nextLine();
 
-        if (removido) {
-            System.out.println("Produto removido com sucesso!");
-        } else {
-            System.out.println("Produto não encontrado.");
+    // Verifica se existe um produto com o código informado e o remove
+    boolean removido = false;
+    for (Produto produto : produtos) {
+        if (produto.getCodigoProduto() == codigoProduto) {
+            produtos.remove(produto);
+            removido = true;
+            break;
         }
     }
+
+    if (removido) {
+        System.out.println("Produto removido com sucesso!");
+    } else {
+        System.out.println("Produto não encontrado.");
+    }
+}
+
 
     // Método para alterar os dados de um produto existente no catálogo
     public void alterarProduto() {
