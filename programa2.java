@@ -159,28 +159,30 @@ public void removerProduto() {
     }
     
     // Método para pesquisar um produto pelo nome
-    public void pesquisarProduto() {
-        Scanner lei = new Scanner(System.in);
-        System.out.println("Digite o nome do produto que deseja pesquisar:");
-        String nomeProduto = lei.nextLine();
-    
-        List<Produto> resultados = new ArrayList<>();
-    
-        for (Produto produto : produtos) {
-            if (produto.getNomeProduto().equalsIgnoreCase(nomeProduto)) {
-                resultados.add(produto);
-            }
-        }
-    
-        if (resultados.isEmpty()) {
-            System.out.println("Produto não encontrado.");
-        } else {
-            System.out.println("----- Resultados da Pesquisa -----");
-            for (Produto produto : resultados) {
-                System.out.println(produto.mostra());
-            }
+
+public void pesquisarProduto() {
+    Scanner lei = new Scanner(System.in);
+    System.out.println("Digite o código do produto que deseja pesquisar:");
+    int codigoProduto = lei.nextInt();
+
+    List<Produto> resultados = new ArrayList<>();
+
+    for (Produto produto : produtos) {
+        if (produto.getCodigoProduto() == codigoProduto) {
+            resultados.add(produto);
         }
     }
+
+    if (resultados.isEmpty()) {
+        System.out.println("Produto não encontrado.");
+    } else {
+        System.out.println("----- Resultados da Pesquisa -----");
+        for (Produto produto : resultados) {
+            System.out.println(produto.mostra());
+        }
+    }
+}
+
     
     public static void main(String[] args) {
         programa2 catalogo = new programa2();
