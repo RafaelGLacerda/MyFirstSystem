@@ -170,9 +170,6 @@ public class Programa {
         System.out.println("Digite o nome do produto:");
         String nomeProduto = lei.nextLine();
 
-        // Verificar se o produto já existe e removê-lo
-        produtos.removeIf(produto -> produto.getNomeProduto().equalsIgnoreCase(nomeProduto));
-
         System.out.println("Digite a cor do produto:");
         String cor = lei.nextLine();
         System.out.println("Digite o preço do produto:");
