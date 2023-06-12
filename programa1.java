@@ -128,8 +128,8 @@ public String mostra() {
     StringBuilder sb = new StringBuilder();
     sb.append("Codigo: ").append(codigoProduto)
             .append(", Nome do Produto: ").append(nomeProduto)
-            .append(", Cor: ").append(cor)
-            .append(", Preço: ").append(preco)
+            .append(" Cor: ").append(cor)
+            .append(" Preço: ").append(preco)
             .append(", Tamanho: ").append(tamanho)
             .append(", Material: ").append(material)
             .append(", Tipo de Produto: ").append(tipoProduto);
@@ -152,4 +152,3 @@ public String mostra() {
         return nomeProduto.compareTo(outroProduto.getNomeProduto());
     }
 }
-
